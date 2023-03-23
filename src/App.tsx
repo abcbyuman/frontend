@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// importing the NCAA team info to be used later
 const teamInfo = [
             {"tid": 159, "cid": 0, "did": 0, school: "Boston College", name: "Eagles", "abbrev": "BC", "pop": 161, city: "Chestnut Hill", state: "MA", "latitude": 42.330, "longitude": -71.166},
             {"tid": 105, "cid": 0, "did": 0, "school": "Clemson", "name": "Tigers", "abbrev": "CLEM", "pop": 215, "city": "Clemson", "state": "SC", "latitude": 34.678, "longitude": -82.839},
@@ -331,7 +332,7 @@ const teamInfo = [
 //   return (<h1>The Best Music Trios Ever (According to Spencer)</h1>);
 // }
 
-// This class is the template for eaach team card
+// This class is the template for each team card
 class Team extends React.Component<any, any> {
   render() {
     
