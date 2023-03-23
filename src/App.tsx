@@ -331,6 +331,7 @@ const teamInfo = [
 //   return (<h1>The Best Music Trios Ever (According to Spencer)</h1>);
 // }
 
+// This class is the template for eaach team card
 class Team extends React.Component<any, any> {
   render() {
     
@@ -348,6 +349,7 @@ class Team extends React.Component<any, any> {
   }
 }
 
+// Here I write a function to dynamically print out each team and is associated properties, cycling through the json list
 function TeamList() {
   return (
     <div>
@@ -356,6 +358,7 @@ function TeamList() {
   );
 }
 
+// This function will display the header I have chosen as well as the spinny logo and all the team cards.
 function App() {
   return (
     <div className="App">
@@ -364,7 +367,7 @@ function App() {
         
         
         <img src={logo} className="App-logo" alt="logo" />
-        <h6>I like the spinny logo so I'm leaving it. Find team cards below:</h6>
+        <h6>I like the spinny logo so I'm leaving it. Team cards are below:</h6>
         {/* <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p> */}
